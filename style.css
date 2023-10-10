@@ -49,7 +49,30 @@
 }
 /*====== two header rows ======*/
 .header-1 {
-    background-color: blue;
+    background-color: lightgray;
+    display: flex;
+}
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.search-btn {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-img {
+    height: 40px;
+    width: 40px;
+}
+.search-input {
+    height: 40px;
+    width: 550px;
+    background-color: lightgray;
+    border-radius: 20px;
 }
 .header-2 {
     background-color: green;
