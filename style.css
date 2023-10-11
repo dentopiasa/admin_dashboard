@@ -14,8 +14,9 @@
 .nav-grid {
     grid-area: 1 / 1 / 7 / 2;
     display: grid;
-    height: 60%;
-    background-color: lightskyblue;
+    height: 100%;
+    padding-bottom: 30vh;
+    background-color: hsla(248, 77%, 25%, 0.56);
 }
 /*========MASTER HEADER=========*/
 .header-grid {
@@ -29,7 +30,7 @@
 }
 /*========MASTER MAIN SECTION=========*/
 .main-grid {
-    background-color: pink;
+    background-color: lightgrey;
     grid-area: 2 / 2 / 7 / 7;
     border: 2px solid black;
     display: grid;
@@ -37,9 +38,6 @@
     grid-template-rows: repeat(6, 1fr);
     padding-top: 60px;
 }
-
-
-
 /*======= Nav Buttons ========*/
 .nav {
     font-size: 20px;
@@ -47,11 +45,13 @@
     align-items: center;
     justify-content: center;
 }
-/*====== two header rows ======*/
+/*===== two header rows =====*/
+/*===== header one =====*/
 .header-1 {
     background-color: lightgray;
     display: flex;
 }
+/*===== search bar =====*/
 .search {
     display: flex;
     align-items: center;
@@ -67,45 +67,112 @@
 .search-img {
     height: 40px;
     width: 40px;
+    background-color: lightgray;
 }
 .search-input {
     height: 40px;
-    width: 550px;
-    background-color: lightgray;
+    width: 44vw;
     border-radius: 20px;
 }
+/*=====  profile =====*/
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 40px;
+}
+.bell-icon {
+    height: 30px;
+    width: 30px;
+}
+.profile-pic {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 10px;;
+}
+.profile-name{
+    font-size: 20px;
+}
+/*===== header two =====*/
 .header-2 {
-    background-color: green;
+    background-color: lightgray;
+    display: flex;
+    padding-left: 40px;
+}
+.big-photo {
+    border-radius: 50%;
+    height: 100px;
+}
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.span1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.span2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.buttons {
+    display: flex;
+    position:relative;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: 40px;
+}
+button {
+    width: 8vw;
+    height: 50px;
+    border-radius: 15%;
+    background-color: hsla(248, 77%, 25%, 0.56);
+    font-size: 1.5rem;
+    color: lightgray;
 }
 /*===== main section block ======*/
 
 .main-grid div {
     border: 1px solid black;
-    margin: 40px;
     background-color: grey;
+}
+#projects {
+    background-color: lightgrey;
+    grid-area: 1/3 / 7/1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2vh 1fr 1fr 1fr ;
 }
 
 .project-1 {
-    grid-area: 3/1 / 1/1;
+    grid-area: 2/1 / 2/1;
 }
 .project-2 {
-    grid-area: 5/1 / 3/1;
+    grid-area: 2/2 / 2/2;
 }
 .project-3 {
-    grid-area: 7/1 / 5/1;
+    grid-area: 3/1 / 3/1;
 }
 .project-4 {
-    grid-area: 3/2 / 1/3;
+    grid-area: 3/2 / 3/3;
 }
 .project-5 {
-    grid-area: 5/2 / 3/3;
+    grid-area: 4/1 / 4/1;
 }
 .project-6 {
-    grid-area: 7/2 / 5/3;
+    grid-area: 4/2 / 4/4;
 }
-.announcements {
+
+#announcements {
     grid-area: 4/3 / 1/5;
 }
-.trending {
+#trending {
     grid-area: 7/3 / 4/5;
 }
