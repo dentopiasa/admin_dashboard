@@ -114,7 +114,7 @@
     font-weight: 500;
 }
 .span1 {
-    font-size: 20px;
+    font-size: 10px;
     margin-bottom: 10px;
 }
 .span2 {
@@ -162,40 +162,50 @@ button {
     grid-area: 2/1 / 2/1;
     font-size: 1rem;
     padding: 20px;
+    position: relative;
+    border: 1px solid black;
 }
 .project-2 {
     grid-area: 2/2 / 2/2;
     font-size: 1rem;
     padding: 20px;
+    position: relative;
+    border: 1px solid black;
 }
 .project-3 {
     grid-area: 3/1 / 3/1;
     font-size: 1rem;
     padding: 20px;
+    position: relative;
+    border: 1px solid black;
 }
 .project-4 {
     grid-area: 3/2 / 3/2;
     font-size: 1rem;
     padding: 20px;
+    position: relative;
+    border: 1px solid black;
 }
 .project-5 {
     grid-area: 4/1 / 4/1;
     font-size: 1rem;
     padding: 20px;
+    position: relative;
+    border: 1px solid black;
 }
 .project-6 {
     grid-area: 4/2 / 4/3;
     font-size: 1rem;
     padding: 20px;
+    position: relative;
     border: 1px solid black;
-    display: flex;
-    flex-direction: column;
 }
 
 #announcements {
     grid-area: 4/3 / 1/5;
     display: flex;
     flex-direction: column;
+    position: relative;
     margin: 45px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -203,7 +213,16 @@ button {
 .announcements {
     flex: 1;
     border: 1px solid black;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }
+.announcements div {
+    flex: 1;
+    padding-bottom: 6px;
+}
+
 #trending {
     grid-area: 7/3 / 4/5;
     display: flex;
@@ -216,7 +235,32 @@ button {
     flex: 1;
     border: 1px solid black;
 }
-.icons {
-    height: 40px;
- 
+.icons img {
+    height: 35px;
+}
+.flex {
+    display: flex;
+    gap:5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.trending-photo {
+    height: 60px;
+    border-radius: 50%;
+}
+.trending-text {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.trending .span1 {
+    font-size: 10px;
+}
+.trending .span2 {
+    font-size: 10px;
 }
