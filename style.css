@@ -114,7 +114,7 @@
     font-weight: 500;
 }
 .span1 {
-    font-size: 10px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 .span2 {
@@ -157,48 +157,29 @@ button {
     font-size: 1rem;
     font-weight: normal;
 }
-
-.project-1 {
-    grid-area: 2/1 / 2/1;
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
     font-size: 1rem;
     padding: 20px;
     position: relative;
     border: 1px solid black;
+}
+.project-1 {
+    grid-area: 2/1 / 2/1;
 }
 .project-2 {
     grid-area: 2/2 / 2/2;
-    font-size: 1rem;
-    padding: 20px;
-    position: relative;
-    border: 1px solid black;
 }
 .project-3 {
     grid-area: 3/1 / 3/1;
-    font-size: 1rem;
-    padding: 20px;
-    position: relative;
-    border: 1px solid black;
 }
 .project-4 {
     grid-area: 3/2 / 3/2;
-    font-size: 1rem;
-    padding: 20px;
-    position: relative;
-    border: 1px solid black;
 }
 .project-5 {
     grid-area: 4/1 / 4/1;
-    font-size: 1rem;
-    padding: 20px;
-    position: relative;
-    border: 1px solid black;
 }
 .project-6 {
     grid-area: 4/2 / 4/3;
-    font-size: 1rem;
-    padding: 20px;
-    position: relative;
-    border: 1px solid black;
 }
 
 #announcements {
@@ -222,7 +203,6 @@ button {
     flex: 1;
     padding-bottom: 6px;
 }
-
 #trending {
     grid-area: 7/3 / 4/5;
     display: flex;
